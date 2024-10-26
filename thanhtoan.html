@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn Thanh Toán</title>
+   <style>
+    /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(img/background_img.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+.step {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #ff4500;
+}
+
+/* Danh sách khóa học */
+.course-list {
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.course-list li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/* Link Styling */
+.course-link {
+    text-decoration: none;
+    color: #007bff;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.course-link:hover {
+    background-color: #ff4500;
+    color: white;
+}
+
+/* QR Code Container */
+.qr-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.qr-code {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* Contact Button */
+.contact-button {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .course-list li {
+        font-size: 16px;
+    }
+
+    .contact-button {
+        font-size: 16px;
+    }
+}
+
+   </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hướng Dẫn Thanh Toán</h1>
+
+        <!-- Bước 2: QR code để thanh toán -->
+        <div class="step">
+            <h2>Bước 1: Thanh toán</h2>
+            <p>Quét mã QR dưới đây để thanh toán:</p>
+            <div class="qr-container">
+                <img src="img/qr.jpg" alt="QR Code" class="qr-code">
+            </div>
+            <p>Hoặc :</p>
+            <p style="color: red;"> STK : 888819092005</p>
+            <p style="color: red;">MBBank</p>
+            <p> Pham Duy Nghia</p>
+        </div>
+
+        <!-- Bước 3: Liên hệ -->
+        <div class="step">
+            <h2 >Bước 2: Liên hệ hỗ trợ</h2>
+            <p style="margin-bottom: 20px;">nhấn liên hệ ngay để gửi tên mail kèm bill thanh toán để được nhận ngay nhé.</p>
+            <a href="https://www.instagram.com/phamduynghia_199?igsh=MWZkbDVkNWpka3FvaQ%3D%3D&utm_source=qr"><button class="contact-button">Liên hệ ngay</button></a>
+        </div>
+    </div>
+</body>
+</html>
